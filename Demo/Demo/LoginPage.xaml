@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             NavigationPage.HasNavigationBar="False"
+             mc:Ignorable="d"           
+             x:Class="Demo.LoginPage">
+    <ScrollView>
+        <RelativeLayout>
+
+            <Image Source="bg.jpg"
+                   Aspect="AspectFill"
+                   RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                   RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" />
+
+            <StackLayout RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                         RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                         Margin="40"
+                         VerticalOptions="Center"
+                         Orientation="Vertical">
+
+                <StackLayout VerticalOptions="Center">
+                    <Label Text="บทเรียนคอมพิวเตอร์ช่วยสอน"
+                           FontSize="20"
+                           FontAttributes="Bold" />
+                    <Label Text="Application ช่วยสอน"
+                           FontSize="Small"
+                           Margin="0,0,0,50" />
+
+                </StackLayout>
+
+                <Image Source="l.png"
+                       HeightRequest="50" />
+
+                <Entry x:Name="UsernameEntry"
+                       Margin="0, 50, 0, 0"
+                       Placeholder="Username">
+
+                    <Entry.HeightRequest>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <On Platform="Android">50</On>
+                            <On Platform="iOS">50</On>
+                        </OnPlatform>
+                    </Entry.HeightRequest>
+                </Entry>
+
+                <Entry x:Name="PasswordEntry"
+                       IsPassword="True"
+                       Placeholder="Password">
+                    <Entry.HeightRequest>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <On Platform="Android">50</On>
+                            <On Platform="iOS">50</On>
+                        </OnPlatform>
+                    </Entry.HeightRequest>
+                </Entry>
+
+                <Button Text="Login"
+                        BackgroundColor="#727B8E"
+                        TextColor="White"
+                        Margin="20, 20, 20, 20"
+                        Clicked="Login_Clicked" />
+
+                <StackLayout Orientation="Horizontal">
+
+
+                    <Label HeightRequest="30"
+                           WidthRequest="130"
+                           TextColor="#ED655A"
+                           VerticalTextAlignment="Center"
+                           Text="Sing up">
+
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="SingUp_Clicked" />
+                        </Label.GestureRecognizers>
+
+                    </Label>
+
+                    <Label HeightRequest="30"
+                           TextColor="#B0B2BB"
+                           HorizontalTextAlignment="End"
+                           VerticalTextAlignment="Center"
+                           WidthRequest="130"
+                           HorizontalOptions="EndAndExpand"
+                           Text="Version : 1.0">
+
+                    </Label>
+
+                </StackLayout>
+
+            </StackLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</ContentPage>

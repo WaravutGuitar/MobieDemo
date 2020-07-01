@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             Title="รวมบทเรียนช่วยสอน"
+             BackgroundImageSource="bg1.jpg"
+             mc:Ignorable="d"
+             x:Class="Demo.SelectSubjectPage">
+    <Grid Padding="5,5,5,5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition  Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0"
+               Text="มัธยมศึกษาปีที่ 1"
+               FontSize="15"
+               TextColor="DarkRed"
+               FontAttributes="Bold" />
+        <ImageButton Source="media12.png"
+                     Grid.Row="1"
+                     HorizontalOptions="Center"
+                     VerticalOptions="CenterAndExpand"
+                     WidthRequest="170"
+                     HeightRequest="170"
+                     BackgroundColor="Transparent"
+                     Clicked="Subject_Clicked" />
+    </Grid>
+    <!--<StackLayout>
+        <Button Text="คณิตศาสตร์"
+                BackgroundColor="#727B8E"
+                TextColor="White"
+                Margin="20, 10, 20, 10"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                WidthRequest="150"
+                HeightRequest="150"
+                Clicked="Subject_Clicked" />
+    </StackLayout>-->
+</ContentPage>

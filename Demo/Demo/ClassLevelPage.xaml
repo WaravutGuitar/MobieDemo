@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms"
+             mc:Ignorable="d"
+             Title="รวมบทเรียนช่วยสอน"
+             BackgroundImageSource="bg1.jpg"
+             x:Class="Demo.ClassLevelPage">
+    <!--<StackLayout>
+        <Button Text="มัธยมศึกษาปีที่ 1-6"
+                BackgroundColor="#727B8E"
+                TextColor="White"
+                Margin="20, 10, 20, 10"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                WidthRequest="150"
+                HeightRequest="150"
+                Clicked="Level_Clicked" />
+    </StackLayout>-->
+    <Grid Padding="5,5,5,5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition  Height="auto" />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0"
+               Text="แยกตามระดับชั้น"
+               FontSize="15"
+               TextColor="DarkRed"
+               FontAttributes="Bold" />
+        <ImageButton Source="media3.png"
+                     Grid.Row="1"
+                     HorizontalOptions="Center"
+                     VerticalOptions="CenterAndExpand"
+                     WidthRequest="170"
+                     HeightRequest="170"
+                     BackgroundColor="Transparent"
+                     Clicked="Level_Clicked" />
+    </Grid>
+    <!--<StackLayout>
+        <Label Grid.Row="0"
+               Text="บทเรียน 8 กลุ่มสาระ"
+               FontSize="15"
+               TextColor="DarkRed"
+               BackgroundColor="Red"
+               FontAttributes="Bold" />
+    </StackLayout>
+
+    <ContentPage.Content>
+        <carousel:SfCarousel x:Name="carousel"
+                             ItemHeight="200"
+                             ItemWidth="200"                            
+                             BackgroundColor="Transparent"
+                             Grid.Row="1"
+                             ViewMode="Default"
+                             SelectionChanged="Carousel_SelectionChanged"/>
+
+    </ContentPage.Content>-->
+</ContentPage>

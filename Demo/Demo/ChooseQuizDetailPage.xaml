@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             Title="แบบการเรียนการสอน"
+             BackgroundImageSource="bg2.jpg"
+             mc:Ignorable="d"
+             x:Class="Demo.ChooseQuizDetailPage">
+    <Grid Padding="5,5,5,5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition  Height="160" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="70" />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0"
+               Text="สมการ"
+               FontSize="15"
+               TextColor="DarkRed"
+               FontAttributes="Bold" />
+        <Image Source="media13.png"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               Grid.Row="1"
+               WidthRequest="150"
+               HeightRequest="150"
+               BackgroundColor="Transparent" />
+        <Button      Grid.Row="2"
+                     HorizontalOptions="Center"
+                     VerticalOptions="CenterAndExpand"
+                     HeightRequest="60"
+                     WidthRequest="220"
+                     Text="บทเรียน"
+                     TextColor="DarkRed"
+                     FontSize="16"
+                     FontAttributes="Bold"
+                     CornerRadius="10"
+                     BorderWidth="5"
+                     BorderColor="LightSkyBlue"
+                     BackgroundColor="DeepSkyBlue"
+                     Clicked="Lesson_Clicked" />
+        <Button      Grid.Row="3"
+                     HorizontalOptions="Center"
+                     VerticalOptions="CenterAndExpand"
+                     HeightRequest="60"
+                     WidthRequest="220"
+                     Text="บททดสอบก่อนเรียน"
+                     TextColor="DarkRed"
+                     FontSize="16"
+                     FontAttributes="Bold"
+                     CornerRadius="10"
+                     BorderWidth="5"
+                     BorderColor="LightSkyBlue"
+                     BackgroundColor="DeepSkyBlue"
+                     Clicked="Test_Clicked" />
+
+    </Grid>
+</ContentPage>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             Title="รวมบทเรียนช่วยสอน"
+             BackgroundImageSource="bg1.jpg"
+             mc:Ignorable="d"
+             x:Class="Demo.SetSubjectDetailPage">
+    <Grid Padding="5,5,5,5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition  Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0"
+               Text="คณิตศาสตร์"
+               FontSize="15"
+               TextColor="DarkRed"
+               FontAttributes="Bold" />
+        <ImageButton Source="media11.png"
+                     Grid.Row="1"
+                     HorizontalOptions="Center"
+                     VerticalOptions="CenterAndExpand"
+                     WidthRequest="170"
+                     HeightRequest="170"
+                     BackgroundColor="Transparent"
+                     Clicked="Set_Clicked" />
+    </Grid>
+</ContentPage>
